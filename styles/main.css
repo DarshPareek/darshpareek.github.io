@@ -1,23 +1,24 @@
 body{
-    background-color: #212529;
+    background-color:#1e1f2e;
+    font-family: 'JetBrains Mono', monospace;
 }
 #main-main-headline{
     margin-top:20px;
     font-size:49px;
-    color: #f6f6a0;
+    color: #ffe6b1;
     font-family: 'JetBrains Mono', monospace;
     text-align: center;
 }
 #tagline{
     font-family: 'JetBrains Mono', monospace;
     font-size:21px;
-    color: #8baabf;
+    color: #97ceff;
     display: block;
     text-align:center;
 }
 #face{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border-radius: 5000px;
     display: block;
     display: block;
@@ -26,34 +27,64 @@ body{
     padding-bottom: 4px;
 }
 #main-space{
-    height: 300px;
-    background-color:#212529;
+    height: 200px;
 }
 #icons{
-    fill: aliceblue;
-    &:hover path{
-        fill :#e44d4d;
-    }
-    &:visited path{
-        fill :#e44d4d;
-    }
+  font-size: 28px;
+  color:#000000;
 }
-a:link {
-    fill: aliceblue;
+/* a:link {
+    fill:#212529;
   }
   
   a:visited {
-    fill: aliceblue;
+    fill:#212529;
   }
   
   a:hover {
-    fill: aliceblue;
+    fill:#f69494;
   }
   
   a:active {
-    fill:  aliceblue;
-  }
+    fill:#212529;
+  } */
   
   a:link, a:visited {
     text-decoration: none;
   }
+#skill-main{
+  margin: 0,auto;
+  display: flex;
+}
+.skill img{
+  margin:0, auto;
+  height: 40px;
+  width: 40px;
+  float: left;
+}
+.skill{
+  background-color:#181825;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin:0, auto;
+  height: 50px;
+  width: 50px;
+  font-size: 0px;
+  &:hover{
+    width:auto;
+    margin: 0,auto;
+    color: #a8e8b5;
+    font-size:14px;
+  }
+}
+.skill-title{
+  color:#f6f6a0;
+}
+#contact{
+  padding-top:20px;
+  font-size: 21px;
+  color: #f6f6a0;
+}
+#expand{
+  color: #a8e8b5;
+}
