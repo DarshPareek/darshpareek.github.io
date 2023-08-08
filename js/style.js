@@ -18,45 +18,45 @@ document.addEventListener("DOMContentLoaded", function() {
         s1.style.fontSize = "0px";
     });
     h1.addEventListener("mouseover", function() {
-        s1.style.fontSize = "20px";
+        s1.style.fontSize = "14px";
     });
     
     h2.addEventListener("mouseout", function() {
         s2.style.fontSize = "0px";
     });
     h2.addEventListener("mouseover", function() {
-        s2.style.fontSize = "20px";
+        s2.style.fontSize = "14px";
     });
     
     h3.addEventListener("mouseout", function() {
         s3.style.fontSize = "0px";
     });
     h3.addEventListener("mouseover", function() {
-        s3.style.fontSize = "20px";
+        s3.style.fontSize = "14px";
       });
       
       h4.addEventListener("mouseout", function() {
           s4.style.fontSize = "0px";
         });
         h4.addEventListener("mouseover", function() {
-            s4.style.fontSize = "20px";
+            s4.style.fontSize = "14px";
         });
         
         h5.addEventListener("mouseout", function() {
             s5.style.fontSize = "0px";
         });
         h5.addEventListener("mouseover", function() {
-            s5.style.fontSize = "20px";
+            s5.style.fontSize = "14px";
         });
         
         h6.addEventListener("mouseover", function() {
-          s6.style.fontSize = "20px";
+          s6.style.fontSize = "14px";
         });
         h6.addEventListener("mouseout", function() {
             s6.style.fontSize = "0px";
         });
         h7.addEventListener("mouseover", function() {
-            s7.style.fontSize = "20px";
+            s7.style.fontSize = "14px";
           });
           h7.addEventListener("mouseout", function() {
               s7.style.fontSize = "0px";
