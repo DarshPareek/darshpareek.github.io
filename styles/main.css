@@ -4,17 +4,17 @@ body{
 }
 #main-main-headline{
     margin-top:20px;
-    font-size:49px;
-    color: #ffe6b1;
-    font-family: 'JetBrains Mono', monospace;
+    font-size:35px;
+    color: #f6f6a0;
     text-align: center;
 }
 #tagline{
-    font-family: 'JetBrains Mono', monospace;
     font-size:21px;
     color: #97ceff;
     display: block;
     text-align:center;
+    padding-left:20%;
+    padding-right:20%;
 }
 #face{
     height: 200px;
@@ -52,39 +52,44 @@ body{
   a:link, a:visited {
     text-decoration: none;
   }
-#skill-main{
-  margin: 0,auto;
-  display: flex;
+table{
+  table-layout: fixed;
+  height: 10px;
+  width: 40px;
 }
-.skill img{
-  margin:0, auto;
+#skills-main{
+  font-size: 21px;
+  color: #f6f6a0;
+}
+td{
   height: 40px;
   width: 40px;
-  float: left;
 }
-.skill{
-  background-color:#181825;
-  padding-top: 10px;
-  padding-left: 10px;
-  margin:0, auto;
-  height: 50px;
-  width: 50px;
-  font-size: 0px;
-  &:hover{
-    width:auto;
-    margin: 0,auto;
-    color: #a8e8b5;
-    font-size:14px;
-  }
+.skill-img td{
+  height: 40px;
+  width: 40px;
 }
-.skill-title{
-  color:#f6f6a0;
+.skill-data td{
+  color: #a8e8b5;
+  text-align: center;
 }
+.skill-data td{
+  font-size:0px;
+}
+
+
 #contact{
-  padding-top:20px;
+  position: absolute;
+  bottom: 50px;
   font-size: 21px;
   color: #f6f6a0;
 }
 #expand{
   color: #a8e8b5;
+}
+#con-cont{
+  display:flex;
+}
+#con-cont div{
+  padding: 2px;
 }
