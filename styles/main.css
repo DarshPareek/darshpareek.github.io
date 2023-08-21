@@ -3,7 +3,7 @@ body{
     font-family: 'JetBrains Mono', monospace;
 }
 #main-main-headline{
-    margin-top:20px;
+    margin-top:21px;
     font-size:35px;
     color: #f6f6a0;
     text-align: center;
@@ -13,18 +13,18 @@ body{
     color: #97ceff;
     display: block;
     text-align:center;
-    padding-left:20%;
-    padding-right:20%;
+    padding-left:21%;
+    padding-right:21%;
 }
 #face{
-    height: 200px;
-    width: 200px;
-    border-radius: 5000px;
+    height: 210px;
+    width: 210px;
+    border-radius: 5600px;
     display: block;
     display: block;
     margin-left: auto;
     margin-right: auto;   
-    padding-bottom: 4px;
+    padding-bottom: 7px;
 }
 #main-space{
     height: 200px;
@@ -80,7 +80,7 @@ td{
 
 #contact{
   position: absolute;
-  bottom: 14%;
+  bottom: 10%;
   font-size: 150%;
   color: #f6f6a0;
 }
