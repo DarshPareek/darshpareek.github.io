@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const s6 = document.querySelector("#cpd");
     const h7 = document.querySelector("#mati");
     const s7 = document.querySelector("#matd");
+    const h8 = document.querySelector("#rust");
+    const s8 = document.querySelector("#rusted");
     
     h1.addEventListener("mouseout", function() {
         s1.style.fontSize = "0px";
@@ -60,5 +62,11 @@ document.addEventListener("DOMContentLoaded", function() {
           });
           h7.addEventListener("mouseout", function() {
               s7.style.fontSize = "0px";
+          });
+        h8.addEventListener("mouseover", function() {
+            s8.style.fontSize = "14px";
+          });
+          h8.addEventListener("mouseout", function() {
+              s8.style.fontSize = "0px";
           });
     });
