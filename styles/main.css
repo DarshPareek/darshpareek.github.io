@@ -2,6 +2,11 @@ body{
     background-color:#1e1f2e;
     font-family: 'JetBrains Mono', monospace;
 }
+
+.language-card:hover .language-card-text {
+  opacity: 1;
+  max-height: 200px; /* Sufficient height for the text to be fully visible */
+}
 #main-main-headline{
     margin-top:21px;
     font-size:35px;
@@ -96,4 +101,47 @@ td{
 #rustimg{
   /* background-color: #E01B24; */
   height:35px;
+}
+
+.language-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px; /* Add some space between cards */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Initial size based on min-dimensions */
+  min-width: 80px; /* Initial size, adjust as needed */
+  min-height: 80px; /* Initial size, adjust as needed */
+  /* Set initial flex direction */
+  flex-direction: row;
+  transition: all 0.3s ease; /* Smooth transition for changes */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.language-card:hover {
+  /* Define expanded size */
+  width: 150px; /* Expanded width, adjust as needed */
+  height: 120px; /* Expanded height, adjust as needed */
+  /* Change layout to vertical on hover */
+  flex-direction: column;
+  /* Align items to center for column layout */
+  align-items: center;
+  border-color: #007bff; /* Change border color on hover */
+  cursor: pointer; /* Indicate it\'s interactive */
+}
+
+.language-card-text {
+  margin-top: 5px;
+  text-align: center;
+  color: #333; /* Darker text color */
+  /* Default font size when visible */
+  font-size: 14px; /* Match the size used in App.js */
+  /* Initially hidden and collapsed */
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  /* Smooth transition for appearing */
+  transition: opacity 0.3s ease, max-height 0.3s ease;
 }
