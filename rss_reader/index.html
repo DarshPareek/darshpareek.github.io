@@ -14,19 +14,38 @@
                 overflow: hidden;
             }
         </style>
-    <link rel="modulepreload" href="/rss_reader-13a777fa9029c280.js" crossorigin="anonymous" integrity="sha384-CVobG/05Qm80EIuDirww8ZmF2JNaQcmHRPk1uJ68PNkIecz9pEoFCEI8bs+IakZ8"><link rel="preload" href="/rss_reader-13a777fa9029c280_bg.wasm" crossorigin="anonymous" integrity="sha384-zlFKZV3ltB3iJvARzTqh2JxvI5fObsJ7ssXv26v5lz5JwlieEUROdTkrMx4CeyOn" as="fetch" type="application/wasm"></head>
+        <link
+            rel="modulepreload"
+            href="/rss_reader/rss_reader-e5e23ff1873095ae.js"
+            crossorigin="anonymous"
+            integrity="sha384-f+K3tFanwEVa3HeFJVvjpNap7rjDfAWjNU5XOjdLCXNNbaSTvaY5wuUx6jNVN6sa"
+        />
+        <link
+            rel="preload"
+            href="/rss_reader/rss_reader-e5e23ff1873095ae_bg.wasm"
+            crossorigin="anonymous"
+            integrity="sha384-g9VTgE0AxlCv8ZDHy6KHerW2nYpgCmOIvv+oiSeekL/u9AgKCOHfBzICWb4Jc59y"
+            as="fetch"
+            type="application/wasm"
+        />
+    </head>
     <body>
         <canvas id="the_canvas_id"></canvas>
-    
-<script type="module">
-import init, * as bindings from '/rss_reader-13a777fa9029c280.js';
-const wasm = await init({ module_or_path: '/rss_reader-13a777fa9029c280_bg.wasm' });
 
+        <script type="module">
+            import init, * as bindings from "/rss_reader/rss_reader-e5e23ff1873095ae.js";
+            const wasm = await init({
+                module_or_path:
+                    "/rss_reader/rss_reader-e5e23ff1873095ae_bg.wasm",
+            });
 
-window.wasmBindings = bindings;
+            window.wasmBindings = bindings;
 
-
-dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
-
-</script></body>
+            dispatchEvent(
+                new CustomEvent("TrunkApplicationStarted", {
+                    detail: { wasm },
+                }),
+            );
+        </script>
+    </body>
 </html>
